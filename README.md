@@ -1,1 +1,1 @@
-[LIV DEMO](https://github.io/eddy-swe/RPS/)
+# [LIVE DEMO](https://eddy-swe.github.io/RPS/)
