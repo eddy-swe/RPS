@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <section>
-    
-        <article>
-    
-            <h1 id="gameState">Make your choice to start the game.</h1>
-            
-            <b>Opponent's choice: </b><span id="opponentChoice">?</span>
-            
-            <b>Your choice: </b><span id="playerChoice">?</span>
-    
-        </article>
-    
-        <div>
-            <button onclick="playerRoll('✊')">✊ Rock</button>
-            
-            <button onclick="playerRoll('✋')">✋ Paper</button>
-            
-            <button onclick="playerRoll('✌')">✌ Scissors</button>
-            
-        </div>
-    
-        <button onclick="reset()">Reset</button>
-    
-    </section>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-panel">
+      <h1 id="gameState" aria-live="polite">Make your choice to start the game.</h1>
 
-    <script src="index.js"></script>
-</body>
+      <div class="choices" aria-label="Current selections">
+        <div class="choice-row">
+          <span class="choice-label">Opponent's choice:</span>
+          <span id="opponentChoice" class="choice-value">?</span>
+        </div>
+
+        <div class="choice-row">
+          <span class="choice-label">Your choice:</span>
+          <span id="playerChoice" class="choice-value">?</span>
+        </div>
+      </div>
+
+      <div class="actions" aria-label="Choose your move">
+        <button class="choice-button" type="button" data-choice="rock">✊ Rock</button>
+        <button class="choice-button" type="button" data-choice="paper">✋ Paper</button>
+        <button class="choice-button" type="button" data-choice="scissors">✌ Scissors</button>
+      </div>
+
+      <button id="resetButton" class="reset-button" type="button">Reset</button>
+    </main>
+
+    <script type="module" src="src/main.js"></script>
+  </body>
 </html>
