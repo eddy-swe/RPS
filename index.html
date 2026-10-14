@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section>
+    
+        <article>
+    
+            <h1 id="gameState">Make your choice to start the game.</h1>
+            
+            <b>Opponent's choice: </b><span id="opponentChoice">?</span>
+            
+            <b>Your choice: </b><span id="playerChoice">?</span>
+    
+        </article>
+    
+        <div>
+            <button onclick="playerRoll('✊')">✊ Rock</button>
+            
+            <button onclick="playerRoll('✋')">✋ Paper</button>
+            
+            <button onclick="playerRoll('✌')">✌ Scissors</button>
+            
+        </div>
+    
+        <button onclick="reset()">Reset</button>
+    
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

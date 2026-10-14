@@ -1,0 +1,52 @@
+section {
+  text-align: center;
+  color: blue;
+  width: 500px;
+  max-width: 90vw;
+  padding: 5px;
+  margin: auto;
+  border: 1px solid blue;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  background: azure;
+  box-shadow: 1px 1px black;
+}
+
+article {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+h1 {
+  border-bottom: 1px solid blue;
+  padding-bottom: 1rem;
+  text-shadow: 0.5px 0.5px black;
+}
+
+#gameState {
+  margin-bottom: 1rem;
+}
+
+button {
+  margin: 1rem 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid blue;
+  border-radius: 5px;
+  color: blue;
+  background: azure;
+  cursor: pointer;
+  box-shadow: 1px 1px black;
+  transition: 0.5s;
+  text-transform: uppercase;
+  padding: 5px 10px;
+}
+
+button:hover {
+  scale: 0.9;
+  transition: 0.5s;
+}
+
+button:active {
+  scale: 0.8;
+  transition: 0.5s;
+}
