@@ -1,9 +1,9 @@
 :root {
-  --bg-color: #f2f7ff;
-  --panel-color: #ffffff;
-  --border-color: #3d5afe;
-  --text-color: #1d2a6a;
-  --shadow-color: rgba(29, 42, 106, 0.2);
+  --bg-color: #f2e9e4;
+  --panel-color: #c9ada7;
+  --border-color: #4a4e69;
+  --text-color: #22223b;
+  --shadow-color: #9a8c98;
 }
 
 * {
